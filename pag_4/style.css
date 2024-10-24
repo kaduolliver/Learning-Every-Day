@@ -1,0 +1,48 @@
+/* Estilos Globais */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Define altura mínima da página como 100% da janela */
+    margin: 0; /* Remove margens padrão */
+    background-color: black;
+}
+
+/* Estilos do Conteúdo */
+.content {
+    flex: 1; /* Faz o conteúdo principal ocupar o espaço entre o topo e a navegação */
+}
+
+/* Estilos da Navegação */
+nav {
+    background-color: #000000;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* styles.css */
+
+/* Cor dos botões normais */
+.pagination .page-link {
+    background-color: #007bff; /* Altere para a cor desejada */
+    color: white; /* Cor do texto */
+    border: none; /* Remove a borda, se desejado */
+}
+
+/* Cor dos botões quando o mouse está sobre eles (hover) */
+.pagination .page-link:hover {
+    background-color: #0056b3; /* Altere para a cor desejada */
+    color: white;
+}
+
+/* Cor dos botões desabilitados */
+.pagination .page-item.disabled .page-link {
+    background-color: #e9ecef; /* Altere para a cor desejada */
+    color: #6c757d;
+}
+
+/* Cor dos botões ativos (selecionados) */
+.pagination .page-item.active .page-link {
+    background-color: #28a745; /* Altere para a cor desejada */
+    color: white;
+}
+

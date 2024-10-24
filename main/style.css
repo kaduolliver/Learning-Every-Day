@@ -1,0 +1,90 @@
+/* Estilos Globais */
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0; /* Remove margens padrão */
+    background-image: url(../img/anime-sunrise.jpg); /* Diretório da imagem */
+    background-size: cover; /* Faz a imagem cobrir toda a área */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Não repete a imagem */
+    height: 100vh; /* Faz o body ocupar toda a altura da janela */
+}
+.top-bar {
+    position: fixed; /* Fixa no topo da página */
+    top: 0;
+    width: 100%;
+    background: transparent;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    overflow: hidden;
+    color: white;
+    padding: 15px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000; /* Garante que a barra fique por cima de outros elementos */
+}
+/* Estilos do Conteúdo */
+.content {
+    flex: 1; /* Faz o conteúdo principal ocupar o espaço entre o topo e a navegação */
+}
+
+.card {
+    position: absolute;
+    top: 50%; /* Centraliza verticalmente o card */
+    right: 0; /* Encosta o card na borda direita */
+    transform: translateY(-50%); /* Ajuste para centralizar perfeitamente */
+    background-color: #007bff;
+    padding: 20px;
+    margin-right: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos da Navegação */
+nav {
+    padding: 10px 0;
+    text-align: center;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    height: auto;
+}
+
+/* Cor dos botões normais */
+.pagination .page-link {
+    background-color: #007bff; /* Altere para a cor desejada */
+    color: white; /* Cor do texto */
+    border: none; /* Remove a borda, se desejado */
+}
+
+/* Cor dos botões quando o mouse está sobre eles (hover) */
+.pagination .page-link:hover {
+    background-color: #0056b3; /* Altere para a cor desejada */
+    color: white;
+}
+
+/* Cor dos botões desabilitados */
+.pagination .page-item.disabled .page-link {
+    background-color: #e9ecef; /* Altere para a cor desejada */
+    color: #6c757d;
+}
+
+/* Cor dos botões ativos (selecionados) */
+.pagination .page-item.active .page-link {
+    background-color: #28a745; /* Altere para a cor desejada */
+    color: white;
+}
+
