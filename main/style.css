@@ -11,7 +11,7 @@ body {
     
 }
 .top-bar {
-    position: fixed; /* Fixa no topo da página */
+    position: fixed;
     top: 0;
     width: 100%;
     background: transparent;
@@ -24,8 +24,10 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 1000; /* Garante que a barra fique por cima de outros elementos */
+    z-index: 1000;
+    transition: top 0.3s ease-in-out; /* Transição suave ao esconder/exibir */
 }
+
 /* Estilos do Conteúdo */
 .content {
     flex: 1; /* Faz o conteúdo principal ocupar o espaço entre o topo e a navegação */
