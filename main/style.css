@@ -4,10 +4,11 @@ body {
     flex-direction: column;
     margin: 0; /* Remove margens padrão */
     background-image: url(../img/anime-sunrise.jpg); /* Diretório da imagem */
+    background-attachment: fixed; /* Deixa a imagem fixa durante a rolagem */
     background-size: cover; /* Faz a imagem cobrir toda a área */
     background-position: center; /* Centraliza a imagem */
-    background-repeat: no-repeat; /* Não repete a imagem */
     height: 100vh; /* Faz o body ocupar toda a altura da janela */
+    
 }
 .top-bar {
     position: fixed; /* Fixa no topo da página */
@@ -30,26 +31,31 @@ body {
     flex: 1; /* Faz o conteúdo principal ocupar o espaço entre o topo e a navegação */
 }
 
-.card-1 {
-    position: absolute;
-    top: 50%; /* Centraliza verticalmente o card */
-    right: 0; /* Encosta o card na borda direita */
-    transform: translateY(-50%); /* Ajuste para centralizar perfeitamente */
-    background-color: #007bff;
-    padding: 20px;
-    margin-right: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.card-container {
+    position: relative;
+    margin-top: 100px;
+    width: 100%; 
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Alinha os cards à direita */
+    padding: 0 20px;
 }
 
-.card-2 {
-    position: absolute;
-    top: 50%; /* Centraliza verticalmente o card */
-    left: 0; /* Encosta o card na borda direita */
-    transform: translateY(-50%); /* Ajuste para centralizar perfeitamente */
+.card {
     background-color: #007bff;
+    color: white;
     padding: 20px;
-    margin-left: 20px;
+    margin-bottom: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    width: 300px; /* Define uma largura padrão para os cards */
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Animação simples ao passar o mouse */
 }
 
 
