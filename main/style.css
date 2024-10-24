@@ -30,7 +30,7 @@ body {
     flex: 1; /* Faz o conteúdo principal ocupar o espaço entre o topo e a navegação */
 }
 
-.card {
+.card-1 {
     position: absolute;
     top: 50%; /* Centraliza verticalmente o card */
     right: 0; /* Encosta o card na borda direita */
@@ -40,6 +40,19 @@ body {
     margin-right: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+.card-2 {
+    position: absolute;
+    top: 50%; /* Centraliza verticalmente o card */
+    left: 0; /* Encosta o card na borda direita */
+    transform: translateY(-50%); /* Ajuste para centralizar perfeitamente */
+    background-color: #007bff;
+    padding: 20px;
+    margin-left: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
 
 
 
