@@ -8,8 +8,21 @@ body {
     background-size: cover; /* Faz a imagem cobrir toda a área */
     background-position: center; /* Centraliza a imagem */
     height: 100vh; /* Faz o body ocupar toda a altura da janela */
-    
 }
+
+h1 {
+    font-size: 2.5em;
+    background: linear-gradient(45deg, #FF6B6B, #FFD93D);
+    background-clip: text;
+    color: transparent;
+    animation: slideIn 2s ease-out forwards;
+  }
+
+  @keyframes slideIn {
+    from { left: -100px; opacity: 0; }
+    to { left: 0; opacity: 1; }
+  }
+  
 .top-bar {
     position: fixed;
     top: 0;
@@ -26,6 +39,22 @@ body {
     align-items: center;
     z-index: 1000;
     transition: top 0.3s ease-in-out; /* Transição suave ao esconder/exibir */
+}
+
+.bottom-bar {
+    width: 100%;
+    height: 150px;
+    position: relative; /* Posicionamento normal */
+    border-radius: 10px;
+    background-color: black;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    overflow: hidden;
+    color: white;
+    padding: 15px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px; /* Espaço opcional acima da barra */
 }
 
 /* Estilos do Conteúdo */
