@@ -14,4 +14,9 @@ window.addEventListener('scroll', function() {
 const titulo = document.querySelector("h1");
 titulo.textContent = "Learning Every Day";
 
+const myModal = document.getElementById('myModal')
+const myInput = document.getElementById('myInput')
 
+myModal.addEventListener('shown.bs.modal', () => {
+  myInput.focus()
+})
